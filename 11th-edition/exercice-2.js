@@ -19,18 +19,23 @@ readline_object.on("line", (value) => { //Read input values
 readline_object.on("close", ContestResponse); 
 
 
+function determineReduction(n) {
+	if (n > 9) return 0.3
+	if (n > 5) return 0.2
+	if (n > 3) return 0.1
+	return 0
+}
+
 function ContestResponse() {
 	//implements your code here using input array
 	"use strict"
-	let bestScore = input
-		.slice(1)
-		.map(x => x
-			.split(' ')
-			.map(Number)
-			.reduce((a, b) => a + b, 0)
-			/ 3
-		)
-		.reduce((a, b) => a > b ? a : b)
+	let pricePerPerson = Number(input[0])
+	
+	let totalSales = input
+		.slice(2)
+		.map(Number)
+		.map(numberOfPerson => numberOfPerson * pricePerPerson * (1 - determineReduction(numberOfPerson)))
+		.reduce((a, b) => a + b)
 		
-	console.log(Math.ceil(bestScore))
+	console.log(Math.ceil(totalSales))
 }

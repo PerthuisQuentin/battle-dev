@@ -3,3 +3,13 @@
 ## Exercices
 
 - #1 : [Le meilleur restaurant](exercice-1.js)
+
+- #2 : [Buffet à volonté](exercice-2.js)
+
+- #3 : Soon™
+
+- #4 : Soon™
+
+- #5 : Soon™
+
+- #6 : Soon™
