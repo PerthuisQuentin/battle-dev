@@ -22,8 +22,6 @@ readline_object.on("close", ContestResponse);
 function ContestResponse() {
 	//implements your code here using input array
 	"use strict"
-	let restaurantNumber = input[0]
-	
 	let bestScore = input
 	    .slice(1)
 	    .map(x => x
