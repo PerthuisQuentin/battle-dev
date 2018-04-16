@@ -8,10 +8,10 @@ Codes for the previous Battle Dev editions
 
 ## My results
 
-Edition                | General            | Language (Node.js)
----------------------- | ------------------ | -------------
-10th Edition (11/2017) | 540 / 2780 (19.4%) | 40 / 253 (15.8%)
-11th Edition (03/2018) | 253 / 3322 (7.6%)  | 9 / 276 (3.2%)
+Edition                | General            | Language (Node.js) | Exercices | Last answer (20h -> 22h)
+---------------------- | ------------------ | ------------------ | --------- | -----------
+10th Edition (11/2017) | 540 / 2780 (19.4%) | 40 / 253 (15.8%)   | 3 / 6     | 20:47:06
+11th Edition (03/2018) | 253 / 3322 (7.6%)  | 9 / 276 (3.2%)     | 4 / 6     | 21:47:35
 
 ## Codes
 
