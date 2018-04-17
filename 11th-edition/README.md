@@ -6,7 +6,7 @@
 
 - #2 : [Buffet à volonté](exercice-2.js)
 
-- #3 : Soon™
+- #3 : [Copains](exercice-3.js)
 
 - #4 : Soon™
 
