@@ -1,31 +1,9 @@
-/*******
- * Read input from STDIN
- * Use console.log()  to output your result.
- * Use:
- *      LocalPrint( $variable ); 
- * to display simple variables in a dedicated area.
- * 
- * Use:
- *      LocalPrintArray( $array ); 
- * to display arrays in a dedicated area.
- * ***/
-
-var input = [];
-
-readline_object.on("line", (value) => { //Read input values
-	input.push(value);
-})
-//Call ContestResponse when all inputs are red
-readline_object.on("close", ContestResponse); 
-
-function ContestResponse() {
-	//implements your code here using input array
-	"use strict"
-	let myScores = input[0].split(' ').map(Number)
+const contestResponse = input => {
+	const myScores = input[0].split(' ').map(Number)
 	
-	let bestFriendNumber = Number(input[2])
+	const bestFriendNumber = Number(input[2])
 	
-	let finalScore = input
+	const finalScore = input
 		.slice(3)
 		.map(row => {
 			let scores = row.split(' ').map(Number)
@@ -42,5 +20,7 @@ function ContestResponse() {
 		.reduce((acc, val) => acc + val.lastMovie, 0)
 		/ bestFriendNumber
 		
-	console.log(Math.floor(finalScore))
+	return Math.floor(finalScore)
 }
+
+module.exports = contestResponse

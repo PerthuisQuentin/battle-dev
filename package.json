@@ -1,0 +1,22 @@
+{
+	"name": "battle-dev",
+	"version": "0.0.0",
+	"description": "Server side rendering project",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"author": "Quentin Perthuis",
+	"license": "MIT",
+	"homepage": "https://github.com/PerthuisQuentin/battle-dev#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PerthuisQuentin/battle-dev.git"
+	},
+	"bugs": {
+		"url": "https://github.com/PerthuisQuentin/battle-dev/issues"
+	},
+	"dependencies": {
+		"mocha": "^5.1.1"
+	}
+}
