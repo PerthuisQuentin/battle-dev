@@ -2,7 +2,7 @@
 
 ## Exercices
 
-- #1 : [La bataille](exercice-1.js) Soon™
+- #1 : [La bataille](exercice-1.js)
 
 - #2 : [Prix le plus bas](exercice-2.js) Soon™
 
