@@ -25,9 +25,9 @@ npm test
 
 These codes were written after the competitions, without time limit. 😄
 
-- [10th Edition](10th-edition/README.md)
+- [10th Edition (11/2017)](10th-edition/README.md)
 
-- [11th Edition](11th-edition/README.md)
+- [11th Edition (03/2018)](11th-edition/README.md)
 
 ## My results
 

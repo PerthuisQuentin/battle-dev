@@ -2,14 +2,14 @@
 
 ## Exercices
 
-- #1 : Soon™
+- #1 : [La bataille](exercice-1.js) Soon™
 
-- #2 : Soon™
+- #2 : [Prix le plus bas](exercice-2.js) Soon™
 
-- #3 : Soon™
+- #3 : [Hydroponie](exercice-3.js) Soon™
 
-- #4 : Soon™
+- #4 : [ADN](exercice-4.js) Soon™
 
-- #5 : Soon™
+- #5 : [Pizzarama](exercice-5.js) Soon™
 
-- #6 : Soon™
+- #6 : [Aventurier](exercice-6.js) Soon™
