@@ -1,0 +1,41 @@
+37
+armoire
+armoire 16
+armoire 38
+armoire 83
+four 82
+armoire 85
+armoire 17
+tv 41
+armoire 91
+armoire 92
+four 5
+tv 67
+four 69
+armoire 48
+four 46
+tv 65
+armoire 93
+tv 95
+armoire 99
+armoire 96
+armoire 20
+armoire 87
+four 53
+four 16
+armoire 83
+tv 51
+four 57
+four 57
+four 58
+four 22
+armoire 31
+armoire 15
+four 14
+tv 37
+armoire 64
+tv 12
+four 58
+four 92
+
+15
