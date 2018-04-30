@@ -8,7 +8,7 @@
 
 - #3 : [Copains](exercice-3.js)
 
-- #4 : [Tri des crêpes](exercice-4.js) Soon™
+- #4 : [Tri des crêpes](exercice-4.js)
 
 - #5 : [Tramways](exercice-5.js) Soon™
 
