@@ -1,0 +1,8 @@
+5
+TGA
+ATA
+T
+ACT
+TA
+
+TGA ATA#ACT TA T
