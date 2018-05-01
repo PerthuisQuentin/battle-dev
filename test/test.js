@@ -1,6 +1,7 @@
 const Fs = require('fs')
 const Path = require('path')
 const Assert = require('assert')
+const Should = require('should')
 
 const codePath = Path.resolve(__dirname, '../')
 const testPath = Path.resolve(__dirname, '../test')
@@ -30,11 +31,12 @@ describe('Battle Dev', () => {
 						const content = Fs.readFileSync(testPath, { encoding: 'utf-8' })
 						
 						const rows = content.split('\n')
-						const input = rows.slice(0, -2)
-						const output = rows.slice(-1)
+						const separationIndex = rows.indexOf('')
+						const input = rows.slice(0, separationIndex)
+						const output = rows.slice(separationIndex + 1)
 
 						it(`${Path.basename(testFile, '.txt')} : Should return ${output}`, () => {
-							Assert.equal(exerciceCode(input), output)
+							output.should.containEql(exerciceCode(input))
 						})
 					})
 				})

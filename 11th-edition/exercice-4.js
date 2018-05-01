@@ -41,7 +41,7 @@ const contestResponse = input => {
 		.sort((a, b) => a - b)
 		.join(' ')
 
-	return getBestMove(parsedInput, goal)
+	return getBestMove(parsedInput, goal).toString()
 }
 
 module.exports = contestResponse

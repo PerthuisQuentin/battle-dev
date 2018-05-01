@@ -8,7 +8,7 @@ const contestResponse = input => {
 
 	const lowerPrice = prices.reduce((lower, current) => current < lower ? current : lower, prices[0])
 
-	return lowerPrice
+	return lowerPrice.toString()
 }
 
 module.exports = contestResponse

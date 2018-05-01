@@ -15,7 +15,7 @@ const contestResponse = input => {
 		.map(numberOfPerson => numberOfPerson * pricePerPerson * (1 - determineReduction(numberOfPerson)))
 		.reduce((a, b) => a + b)
 		
-	return Math.ceil(totalSales)
+	return Math.ceil(totalSales).toString()
 }
 
 module.exports = contestResponse

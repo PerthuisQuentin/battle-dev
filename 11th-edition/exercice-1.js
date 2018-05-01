@@ -9,7 +9,7 @@ const contestResponse = input => {
 		)
 		.reduce((a, b) => a > b ? a : b)
 		
-	return Math.ceil(bestScore)
+	return Math.ceil(bestScore).toString()
 }
 
 module.exports = contestResponse
