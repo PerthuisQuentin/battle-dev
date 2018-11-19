@@ -1,0 +1,7 @@
+3
+200
+100 adef
+200 ibts
+50 ruef
+
+KO
