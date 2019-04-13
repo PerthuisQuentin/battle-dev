@@ -50,3 +50,22 @@ npm install
 ```
 npm test
 ```
+
+Options
+
+```
+--edition <string>
+	Use a string as filter on editions
+
+--exercice <string>
+	Use a string as filter on exercices
+
+--test <string>
+	Use a string as filter on tests
+```
+
+Example
+
+```
+npm test -- --edition 12 --exercice 3 --test 2
+```

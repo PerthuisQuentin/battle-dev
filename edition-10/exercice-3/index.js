@@ -25,7 +25,7 @@ const contestResponse = input => {
 		.map(row => row.reduce((total, cell) => cell === WATERED ? total + 1 : total, 0))
 		.reduce((total, current) => current + total)
 
-	return wateredCellsNumber.toString()
+	return wateredCellsNumber
 }
 
 module.exports = contestResponse

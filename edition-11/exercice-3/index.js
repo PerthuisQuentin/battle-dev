@@ -20,7 +20,7 @@ const contestResponse = input => {
 		.reduce((acc, val) => acc + val.lastMovie, 0)
 		/ bestFriendNumber
 		
-	return Math.floor(finalScore).toString()
+	return Math.floor(finalScore)
 }
 
 module.exports = contestResponse

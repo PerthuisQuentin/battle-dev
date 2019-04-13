@@ -15,7 +15,7 @@ const contestResponse = input => {
 	})
 	.length
 
-	return result.toString()
+	return result
 }
 
 module.exports = contestResponse

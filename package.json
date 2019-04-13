@@ -2,9 +2,8 @@
 	"name": "battle-dev",
 	"version": "0.0.0",
 	"description": "Server side rendering project",
-	"main": "index.js",
 	"scripts": {
-		"test": "mocha"
+		"test": "mocha ./test/index.js"
 	},
 	"author": "Quentin Perthuis",
 	"license": "MIT",
@@ -20,6 +19,7 @@
 		"axios": "^0.18.0",
 		"html2json": "^1.0.2",
 		"mocha": "^5.1.1",
-		"should": "^13.2.1"
+		"should": "^13.2.1",
+		"yargs": "^13.2.2"
 	}
 }

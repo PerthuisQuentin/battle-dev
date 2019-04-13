@@ -21,7 +21,7 @@ const contestResponse = input => {
         .map(x => x
             .split(" ")
             .map(Number));
-    return optimize(terminusCount, matrix).toString();
+    return optimize(terminusCount, matrix)
 }
 
 module.exports = contestResponse
