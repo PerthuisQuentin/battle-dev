@@ -6,9 +6,9 @@
 
 ## Exercices
 
-- #1 : [Marathon](exercice-1/index.js) Soon™
+- #1 : [Marathon](exercice-1/index.js)
 
-- #2 : [Déménagement](exercice-2/index.js) Soon™
+- #2 : [Déménagement](exercice-2/index.js)
 
 - #3 : [Salle au trésor](exercice-3/index.js) Soon™
 

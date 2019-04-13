@@ -6,9 +6,9 @@
 
 - #2 : [Prix le plus bas](exercice-2/index.js)
 
-- #3 : [Hydroponie](exercice-3/index.js) Soon™
+- #3 : [Hydroponie](exercice-3/index.js)
 
-- #4 : [ADN](exercice-4/index.js) Soon™
+- #4 : [ADN](exercice-4/index.js)
 
 - #5 : [Pizzarama](exercice-5/index.js) Soon™
 

@@ -10,6 +10,6 @@
 
 - #4 : [Tri des crêpes](exercice-4/index.js)
 
-- #5 : [Tramways](exercice-5/index.js) Soon™
+- #5 : [Tramways](exercice-5/index.js)
 
 - #6 : [Canards](exercice-6/index.js) Soon™

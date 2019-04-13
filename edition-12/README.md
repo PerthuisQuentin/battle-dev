@@ -2,9 +2,9 @@
 
 ## Exercices
 
-- #1 : [Vente aux enchères](exercice-1/index.js) Soon™
+- #1 : [Vente aux enchères](exercice-1/index.js)
 
-- #2 : [Mots magiques](exercice-2/index.js) Soon™
+- #2 : [Mots magiques](exercice-2/index.js)
 
 - #3 : [Fonction mystérieuse](exercice-3/index.js) Soon™
 
