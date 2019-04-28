@@ -10,7 +10,7 @@
 
 - #2 : [Déménagement](exercice-2/index.js)
 
-- #3 : [Salle au trésor](exercice-3/index.js) Soon™
+- #3 : [Salle au trésor](exercice-3/index.js)
 
 - #4 : [Lettres manquantes](exercice-4/index.js) Soon™
 
