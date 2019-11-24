@@ -10,13 +10,13 @@ Codes for the previous Battle Dev editions
 
 These codes were written after the competitions, without time limit. 😄
 
-- [10th Edition (08/11/2017)](10th-edition/README.md)
+- [10th Edition - Battle Dev RegionsJob (08/11/2017)](edition-10/README.md)
 
-- [11th Edition (27/03/2018)](11th-edition/README.md)
+- [11th Edition - Battle Dev RegionsJob (27/03/2018)](edition-11/README.md)
 
-- [12th Edition (06/11/2018)](12th-edition/README.md)
+- [12th Edition - Battle Dev Hello Work (06/11/2018)](edition-12/README.md)
 
-- [13th Edition (26/03/2019)](13th-edition/README.md)
+- [13th Edition - Battle Dev Hello Work (26/03/2019)](edition-13/README.md)
 
 ## My results
 
