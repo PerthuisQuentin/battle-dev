@@ -38,7 +38,7 @@ describe('Battle Dev', () => {
 								.filter(testName => !argv.test || testName.includes(argv.test))
 								.forEach(testName => {
 									const testPath = Path.join(exercicePath, testName)
-									const testNumber = testName.split('-')[1]
+									const testNumber = Path.basename(testName, '.txt').split('-')[1]
 									const testContent = Fs.readFileSync(testPath, { encoding: 'utf-8' })
 
 									const rows = testContent.split('\n')
