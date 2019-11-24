@@ -1,9 +1,5 @@
 # 13th Edition - Battle Dev RegionsJob - March 2019
 
-## Ranking
-
-[Here](ranking.md)
-
 ## Exercices
 
 - #1 : [Marathon](exercice-1/index.js)
