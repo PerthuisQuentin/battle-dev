@@ -12,7 +12,7 @@
 
 - #3 : [Salle au trésor](exercice-3/index.js)
 
-- #4 : [Lettres manquantes](exercice-4/index.js) Soon™
+- #4 : [Lettres manquantes](exercice-4/index.js)
 
 - #5 : [Couloir au trésor](exercice-5/index.js) Soon™
 
