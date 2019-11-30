@@ -2,9 +2,9 @@
 
 ## Exercices
 
-- #1 : [Courte Paille](exercice-1/index.js) Soon™
+- #1 : [Courte Paille](exercice-1/index.js)
 
-- #2 : [Cadre Photo](exercice-2/index.js) Soon™
+- #2 : [Cadre Photo](exercice-2/index.js)
 
 - #3 : [Registered Jack 11](exercice-3/index.js) Soon™
 
