@@ -2,9 +2,9 @@
 
 ## Exercices
 
-- #1 : [Yaourts](exercice-1/index.js) Soon™
+- #1 : [Yaourts](exercice-1/index.js)
 
-- #2 : [Série de cartes](exercice-2/index.js) Soon™
+- #2 : [Série de cartes](exercice-2/index.js)
 
 - #3 : [25 heures sur 25](exercice-3/index.js) Soon™
 
