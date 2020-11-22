@@ -6,7 +6,7 @@
 
 - #2 : [Série de cartes](exercice-2/index.js)
 
-- #3 : [25 heures sur 25](exercice-3/index.js) Soon™
+- #3 : [25 heures sur 25](exercice-3/index.js)
 
 - #4 : [Magicartes Evolution Platinium](exercice-4/index.js) Soon™
 
