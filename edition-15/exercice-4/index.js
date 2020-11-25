@@ -39,33 +39,32 @@ const getFightResult = (deckA, deckB) => {
     return indexB - indexA
 }
 
-const generateDecksRecursive = (currentDeck, remainingTypes, decks) => {
+const generateDecksRecursive = (currentDeck, remainingTypes, sachaDeck) => {
     if (remainingTypes.length === 0) {
-        decks.push(currentDeck)
-        return
+        const fightResult = getFightResult(currentDeck, sachaDeck)
+        return fightResult > 0 ? currentDeck : false
     }
 
     for (const i in remainingTypes) {
         const type = remainingTypes[i]
         const newRemainingTypes = [...remainingTypes]
         newRemainingTypes.splice(i, 1)
-        generateDecksRecursive([...currentDeck, type], newRemainingTypes, decks)
+        const result = generateDecksRecursive([...currentDeck, type], newRemainingTypes, sachaDeck)
+        if (result) return result
     }
+
+    return false
 }
 
-const generateDecks = deck => {
-    const decks = []
-    generateDecksRecursive([], deck, decks)
-    return decks
+const generateDecks = (deck, sachaDeck) => {
+    return generateDecksRecursive([], deck, sachaDeck)
 }
 
 const contestResponse = input => {
     const sachaDeck = input[1].split(' ')
     const myDeck = input[2].split(' ')
 
-    const decks = generateDecks(myDeck)
-
-    const winningDeck = decks.find(deck => getFightResult(deck, sachaDeck) > 0)
+    const winningDeck = generateDecks(myDeck, sachaDeck)
 
     return winningDeck ? winningDeck.join(' ') : -1
 }
