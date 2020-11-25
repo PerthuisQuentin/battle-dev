@@ -5,53 +5,67 @@ const Should = require('should')
 const argv = require('yargs').argv
 
 const initialPath = './'
-const editionRegex = /edition-[0-9]+/
-const excerciceRegex = /exercice-[0-9]+/
-const testRegex = /test-[0-9]+/
+
+const editionSettings = {
+	regex: /edition-[0-9]+/,
+	option: 'edition',
+	text: 'Edition'
+}
+const exerciceSettings = {
+	regex: /exercice-[0-9]+/,
+	option: 'exercice',
+	text: 'Exercice'
+}
+const testSettings = {
+	regex: /test-[0-9a-z]+/,
+	option: 'test',
+	text: 'Test'
+}
+
+const display = (text, number) => number ? `${text} #${number}` : text
+
+const loopOnFiles = (path, regex, option, callback) => {
+	Fs.readdirSync(path)
+		.filter(name => regex.test(name))
+		.filter(name => !argv[option] || name.includes(argv[option]))
+		.forEach(callback)
+}
+
+const loopOnFolders = (settings, callback) => path => {
+	if (!Fs.lstatSync(path).isDirectory()) return
+
+	loopOnFiles(path, settings.regex, settings.option, name => {
+		const newPath = Path.join(path, name)
+		const number = name.split('-')[1]
+
+		describe(display(settings.text, number), () => {
+			callback(newPath)
+		})
+	})
+}
+
+const loopOnTests = path => {
+	const exerciceCode = require(Path.join('../', path, 'index.js'))
+
+	loopOnFiles(path, testSettings.regex, testSettings.option, name => {
+		const testPath = Path.join(path, name)
+		const testNumber = Path.basename(name, '.txt').split('-')[1]
+		const testContent = Fs.readFileSync(testPath, { encoding: 'utf-8' })
+
+		const rows = testContent.split('\n')
+		const separationIndex = rows.indexOf('')
+		const input = rows.slice(0, separationIndex)
+		const output = rows.slice(separationIndex + 1)
+
+		it(`${display(testSettings.text, testNumber)} : Should return ${output}`, () => {
+			output.should.containEql(exerciceCode(input).toString())
+		})
+	})
+}
+
+const loopOnExercices = loopOnFolders(exerciceSettings, loopOnTests)
+const loopOnEditions = loopOnFolders(editionSettings, loopOnExercices)
 
 describe('Battle Dev', () => {
-	// Foreach Battle Dev editions
-	Fs.readdirSync(initialPath)
-		.filter(editionName => editionRegex.test(editionName))
-		.filter(editionName => !argv.edition || editionName.includes(argv.edition))
-		.forEach(editionName => {
-			const editionPath = Path.join(initialPath, editionName)
-			if (!Fs.lstatSync(editionPath).isDirectory()) return
-			const editionNumber = editionName.split('-')[1]
-
-			describe(`Edition #${editionNumber}`, () => {
-				// Foreach Edition exerices
-				Fs.readdirSync(editionPath)
-					.filter(exerciceName => excerciceRegex.test(exerciceName))
-					.filter(exerciceName => !argv.exercice || exerciceName.includes(argv.exercice))
-					.forEach(exerciceName => {
-						const exercicePath = Path.join(editionPath, exerciceName)
-						if (!Fs.lstatSync(exercicePath).isDirectory()) return
-						const exerciceNumber = exerciceName.split('-')[1]
-
-						describe(`Exercice #${exerciceNumber}`, () => {
-							const exerciceCode = require(Path.join('../', exercicePath, 'index.js'))
-
-							// Foreach Exercice tests
-							Fs.readdirSync(exercicePath)
-								.filter(testName => testRegex.test(testName))
-								.filter(testName => !argv.test || testName.includes(argv.test))
-								.forEach(testName => {
-									const testPath = Path.join(exercicePath, testName)
-									const testNumber = Path.basename(testName, '.txt').split('-')[1]
-									const testContent = Fs.readFileSync(testPath, { encoding: 'utf-8' })
-
-									const rows = testContent.split('\n')
-									const separationIndex = rows.indexOf('')
-									const input = rows.slice(0, separationIndex)
-									const output = rows.slice(separationIndex + 1)
-
-									it(`Test #${testNumber} : Should return ${output}`, () => {
-										output.should.containEql(exerciceCode(input).toString())
-									})
-								})
-						})
-					})
-			})
-	})
+	loopOnEditions(initialPath)
 })
