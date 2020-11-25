@@ -1,0 +1,5 @@
+10
+glace feu feu vol feu plante vol vol vol glace
+eau plante eau feu feu plante eau plante plante feu
+
+eau plante eau feu feu plante eau plante plante feu

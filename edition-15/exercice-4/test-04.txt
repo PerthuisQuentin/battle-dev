@@ -1,0 +1,5 @@
+10
+eau sol plante sol feu sol feu eau plante sol
+sol sol eau plante sol plante sol eau sol feu
+
+sol sol eau plante sol plante sol eau sol feu

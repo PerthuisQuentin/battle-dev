@@ -1,0 +1,5 @@
+4
+feu plante eau eau
+sol feu eau plante
+
+sol feu eau plante
