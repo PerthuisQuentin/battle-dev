@@ -22,6 +22,8 @@ These codes were written after the competitions, without time limit. 😄
 
 - [15th Edition - Battle Dev Hello Work (26/03/2020)](edition-15/README.md)
 
+- [16th Edition - Battle Dev Hello Work (26/11/2020)](edition-16/README.md)
+
 ## My results
 
 Based on the results I was able to find, among the people who finished at least one exercice.
@@ -35,6 +37,8 @@ Edition                   | General            | Language (Node.js) | Exercices 
 12th Edition (06/11/2018) | 592 / 3900 (15.2%) | 50 / 304 (16.4%)   | 4 / 6     | 21:57:58
 13th Edition (26/03/2019) | 164 / 3577 (4.6%)  | 6 / 408 (1.5%)     | 4 / 6     | 21:17:32
 14th Edition (26/11/2019) | 639 / 4381 (14.5%) | 78 / 615 (12.6%)   | 3 / 6     | 20:30:47
+15th Edition (26/03/2020) | ?                  | ?                  | 3 / 6     | ?
+16th Edition (26/11/2020) | 168 / 4624 (3.6%)  | 10 / 704 (1.4%)    | 4 / 6     | 20:58:57
 
 ## How to use
 
