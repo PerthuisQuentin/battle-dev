@@ -2,7 +2,7 @@
 
 ## Exercices
 
-- #1 : [BattleDev Nov 2020 - 1](exercice-1/index.js) Soon™
+- #1 : [BattleDev Nov 2020 - 1](exercice-1/index.js)
 
 - #2 : [BattleDev Nov 2020 - 2](exercice-2/index.js) Soon™
 
