@@ -1,7 +1,7 @@
 {
 	"name": "battle-dev",
 	"version": "0.0.0",
-	"description": "Server side rendering project",
+	"description": "Battle dev exercices",
 	"scripts": {
 		"test": "mocha ./test/index.js --slow 0 --timeout 0"
 	},
@@ -16,10 +16,10 @@
 		"url": "https://github.com/PerthuisQuentin/battle-dev/issues"
 	},
 	"dependencies": {
-		"axios": "^0.20.0",
+		"axios": "^0.21.1",
 		"html2json": "^1.0.2",
-		"mocha": "^8.1.3",
+		"mocha": "^8.4.0",
 		"should": "^13.2.3",
-		"yargs": "^16.1.1"
+		"yargs": "^17.0.1"
 	}
 }
