@@ -8,7 +8,7 @@
 
 - #3 : [Tétris Bot 1.0](exercice-3/index.js)
 
-- #4 : [Nettoyeur de l'espace](exercice-4/index.js) Soon™
+- #4 : [Nettoyeur de l'espace](exercice-4/index.js)
 
 - #5 : [Ceinture d'astéroïdes](exercice-5/index.js) Soon™
 
