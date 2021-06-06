@@ -2,11 +2,11 @@
 
 ## Exercices
 
-- #1 : [Préparation minutieuse](exercice-1/index.js) Soon™
+- #1 : [Préparation minutieuse](exercice-1/index.js)
 
-- #2 : [Décollage !](exercice-2/index.js) Soon™
+- #2 : [Décollage !](exercice-2/index.js)
 
-- #3 : [Tétris Bot 1.0](exercice-3/index.js) Soon™
+- #3 : [Tétris Bot 1.0](exercice-3/index.js)
 
 - #4 : [Nettoyeur de l'espace](exercice-4/index.js) Soon™
 
